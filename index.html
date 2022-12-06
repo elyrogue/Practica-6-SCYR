@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica 6</title>
+,<style>
+	body
+	{
+		background: ;
+		background-image: url(https://fondosmil.com/fondo/34253.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		color:white;
+		background-color:black;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+	}
+</style>
+<script>
+	function accionParaCuandoDigaQueSi(){
+		location.href ='https://neal.fun/asteroid-launcher/'
+	}
+	function accionSpace(){
+		location.href ='https://neal.fun/size-of-space/'
+	}	
+	function accionNASA(){
+	
+	
+		location.href ='https://spaceplace.nasa.gov/menu/play/sp/'
+	}
+
+
+	function mueveElBoton(){
+		width = window.innerWidth;
+		height = window.innerHeight;
+
+		newWidth = (Math.random() * width);
+		newHeight = (Math.random() * height);
+
+		document.getElementById('btnNo').style.position = "absolute";
+		document.getElementById('btnNo').style.left = newWidth + "px";
+		document.getElementById('btnNo').style.top = newHeight + "px";
+		
+
+	}
+</script>
+</head>
+<body>
+	<h1>Sistemas De Cómputo Y Redes</h1>
+	<h1>Practica 6</h1>
+	<h1>The Space</h1>
+	<p>El espacio exterior, espacio vacío, espacio sidéreo, espacio sideral o simplemente espacio</p>
+	<p>se refiere a las regiones relativamente vacías del universo fuera de las atmósferas de los cuerpos celestes.</p>
+	<img src="ast.png" width="600" height="400"   alt="Astronauta en el espacio">
+	<p>El 'espacio exterior' comienza a 100 km de distancia de la Tierra, donde desaparece la cáscara de aire que envuelve nuestro planeta.</p>
+	<p>Sin aire para esparcir la luz solar y producir un cielo azul, el espacio se ve como un lienzo negro salpicado de estrellas.</p>
+	<img src="nave.png" width="500" height="500" alt="Nave Espacial">
+	<p>Por lo general, se piensa que el espacio está completamente vacío, pero eso no es verdad. Los vastos trechos entre las estrellas y los planetas están llenos de enormes cantidades de gas y polvo,</p>
+	<p> diseminados de manera casi imperceptible. Incluso las partes más vacías del espacio contienen al menos unos cuantos cientos de átomos o moléculas por metro cúbico.</p>
+	<img src="james.png" width="400" height="400" alt="Telescopio JAMES WEBB">
+	<p>El espacio también está lleno de varias formas de radiación peligrosa para los astronautas. Gran parte de esta radiación infrarroja y ultravioleta proviene del Sol.</p>
+	<p>Desde distantes sistemas estelares llegan rayos X, rayos gamma y rayos cósmicos (partículas que viajan a una velocidad cercana a la de la luz) que poseen mucha energía.</p>
+	<img src="tierra.png" width="300" height="400" alt="Planeta tierra">
+	<h2 class="body2">Paginas Interactivas Sobre El Espacio</h2>	
+	<input type="button" onclick="accionParaCuandoDigaQueSi()" id="btnSi" value="Asteroid Launcher" />
+	<input type="button" onclick="accionSpace()" id="btnSi3" value="Size Of Space" />
+	<input type="button" onclick="accionNASA()" id="btnSi2" value="Nasa" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="Close Page" /></body>
+	<h6>Pagina Hecha Por:</h6>
+	<h5>Ulises Guerrero Nahomi Pineda Elizabeth Rodriguez</h5>
+</html>
